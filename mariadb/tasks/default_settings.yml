@@ -1,0 +1,15 @@
+---
+- name: disable gpg check
+  shell: rpm -import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
+
+- name: update repo.
+  shell: dnf update -y
+
+- name: install default app.
+  shell:
+   cmd: "dnf install -y iotop htop telnet strace"
+  ignore_errors: True
+
+- name: time
+  shell:
+   cmd: "timedatectl set-timezone {{time_zone}}"

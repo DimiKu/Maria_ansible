@@ -1,0 +1,5 @@
+[mariadb]
+galera-1 ansible_host=212.233.122.226 ansible_port=22 ansible_user=root ansible_ssh_private_key_file=/Users/d.kuranov/.ssh/id_rsa
+galera-2 ansible_host=212.233.77.84 ansible_port=22 ansible_user=root ansible_ssh_private_key_file=/Users/d.kuranov/.ssh/id_rsa
+galera-3 ansible_host=146.185.241.7 ansible_port=22 ansible_user=root ansible_ssh_private_key_file=/Users/d.kuranov/.ssh/id_rsa
+
